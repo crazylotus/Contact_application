@@ -88,7 +88,7 @@ class AddOrEditContactFragment : BindingFragment<FragmentAddOrEditContactBinding
         try {
             context.contentResolver.applyBatch(ContactsContract.AUTHORITY, ops)
             Toast.makeText(requireContext(),"Contact updated successfully",Toast.LENGTH_LONG).show()
-            findNavController().popBackStack()
+            findNavController().popBackStack(R.id.phoneContackFragment,true)
         } catch (e: Exception) {
             e.printStackTrace()
             // Handle the exception
