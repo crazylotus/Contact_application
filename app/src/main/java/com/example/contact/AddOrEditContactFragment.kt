@@ -91,7 +91,7 @@ class AddOrEditContactFragment : BindingFragment<FragmentAddOrEditContactBinding
             findNavController().popBackStack(R.id.phoneContackFragment,true)
         } catch (e: Exception) {
             e.printStackTrace()
-            // Handle the exception
+
         }
     }
     fun addContact(context: Context, name: String, phoneNumber: String) {
