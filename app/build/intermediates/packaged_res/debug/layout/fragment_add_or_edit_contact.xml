@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/topPanel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/iV_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_close_24"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/idTVName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVContact"
+
+            android:text="Create contact"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idIVContact"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="150dp"
+        android:elevation="@dimen/_5sdp"
+        android:layout_marginStart="10dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_50sdp"
+        android:layout_below="@id/topPanel"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_account_circle_24"
+            android:id="@+id/phone_iv" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/idIVContact"
+        android:id="@+id/llt_name">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_person_24"
+            app:tint="@color/bg_blue"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lable"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_background"
+            android:lines="1"
+            android:inputType="textCapWords"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:hint="Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llt_name"
+        android:id="@+id/llt_phone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/baseline_call_24"
+            app:tint="@color/bg_blue"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lable"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_background"
+            android:lines="1"
+            android:maxLength="10"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:hint="Phone number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llt_phone"
+        android:id="@+id/llt_email">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_email_24"
+            app:tint="@color/bg_blue"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lable"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_background"
+            android:lines="1"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:hint="E-mail address"/>
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>

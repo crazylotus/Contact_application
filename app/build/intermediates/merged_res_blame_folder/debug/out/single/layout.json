@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/fragment_binding.xml",
+        "source": "com.example.contact.app-main-66:/layout/fragment_binding.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/empty_view.xml",
+        "source": "com.example.contact.app-main-66:/layout/empty_view.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/app_loader_view.xml",
+        "source": "com.example.contact.app-main-66:/layout/app_loader_view.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/fragment_add_or_edit_contact.xml",
+        "source": "com.example.contact.app-main-66:/layout/fragment_add_or_edit_contact.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/contact_view.xml",
+        "source": "com.example.contact.app-main-66:/layout/contact_view.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/activity_common.xml",
+        "source": "com.example.contact.app-main-66:/layout/activity_common.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/activity_main.xml",
+        "source": "com.example.contact.app-main-66:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/fragment_random_contact.xml",
+        "source": "com.example.contact.app-main-66:/layout/fragment_random_contact.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/fragment_contact_details.xml",
+        "source": "com.example.contact.app-main-66:/layout/fragment_contact_details.xml"
+    },
+    {
+        "merged": "com.example.contact.app-mergeDebugResources-63:/layout/fragment_phone_contact.xml",
+        "source": "com.example.contact.app-main-66:/layout/fragment_phone_contact.xml"
+    }
+]

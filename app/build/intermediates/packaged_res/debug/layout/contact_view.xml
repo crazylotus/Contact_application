@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/iv_call"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/llt_details">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contact_iv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_account_circle_24"
+            app:tint="@color/bg_blue"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_cv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:cardCornerRadius="@dimen/_50sdp"
+            android:elevation="@dimen/_5sdp"
+            android:layout_marginStart="10dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                android:id="@+id/phone_iv"
+                app:tint="@color/bg_blue"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/google_sans_regular"
+            android:gravity="center_vertical"
+            android:text="First Name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_second_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/google_sans_regular"
+            android:text="Second Name"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/baseline_call_24"
+        app:tint="@color/bg_blue"/>
+
+
+</RelativeLayout>
